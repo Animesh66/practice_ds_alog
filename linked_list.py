@@ -87,13 +87,13 @@ class LinkedList:
             self.insert_at_end(data)
 
     def insert_after_value(self, data_after, data_to_insert):
-        if self.head is None:
+        if self.head is None:  # link list is empty
             return
 
-        if self.head.data == data_after:
+        if self.head.data == data_after:  # insert data after first element
             self.head.next = Node(data_to_insert, self.head.next)
             return
-        itr = self.head
+        itr = self.head  # traverse the link list
         while itr:
             if itr.data == data_after:
                 itr.next = Node(data_to_insert, itr.next)
@@ -101,20 +101,19 @@ class LinkedList:
             itr = itr.next
 
     def remove_by_value(self, data):
-        if self.head is None:
+        if self.head is None:  # if the link list is empty
             return
 
-        if self.head.data == data:
+        if self.head.data == data:  # if the data is in the first index
             self.head = self.head.next
             return
 
-        itr = self.head
+        itr = self.head  # traverse the link list
         while itr.next:
             if itr.next.data == data:
                 itr.next = itr.next.next
                 break
             itr = itr.next
-
 
 
 if __name__ == '__main__':
