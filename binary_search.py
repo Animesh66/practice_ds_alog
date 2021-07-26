@@ -1,7 +1,7 @@
-from util import time_it
+#from util import time_it
 
 
-@time_it
+#@time_it
 def linear_search(numbers_list, number_to_find):
     for index, element in enumerate(numbers_list):
         if element == number_to_find:
@@ -9,7 +9,7 @@ def linear_search(numbers_list, number_to_find):
     return -1
 
 
-@time_it
+#@time_it
 def binary_search(numbers_list, number_to_find):
     left_index = 0
     right_index = len(numbers_list) - 1
