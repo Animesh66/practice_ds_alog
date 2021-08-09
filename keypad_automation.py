@@ -10,5 +10,4 @@ def test_function(letters):
                 return user_output.append(v)
 
 
-
 print(test_function(user_input))
