@@ -4,10 +4,12 @@ user_output = []
 
 
 def test_function(letters):
-    for letter in letters:
+    new_letters = letters.upper()
+    for letter in new_letters:
         for l, v in mobile_key.items():
-            if letter in mobile_key[l]:
-                return user_output.append(v)
-
+            if letter in l:
+                user_output.append(v)
+                break
+    return user_output
 
 print(test_function(user_input))
