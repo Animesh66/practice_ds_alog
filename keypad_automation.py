@@ -12,4 +12,5 @@ def test_function(letters):
                 break
     return user_output
 
+
 print(test_function(user_input))
