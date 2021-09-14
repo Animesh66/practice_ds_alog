@@ -16,14 +16,20 @@ for each_name in names:
 print(age_dict)
 
 # search work through regular expression
+
 if re.search("inform", "We need to inform him on time"):
     print("Inform is there in the string")
 
 # find all possible inform ord in a given string
-find_inform = re.findall("inform", "We need to inform him with latest information")
 
+find_inform = re.findall("inform", "We need to inform him with latest information")
 for inform in find_inform:
     print(inform)
-
 print(len(find_inform))
+
+# print the starting and ending index of the matching string
+str = "We need to inform him with latest information"
+for index in re.finditer("inform", str):
+    location = index.span()  # convert the index into a tuple
+    print(location)
 
