@@ -78,6 +78,7 @@ if re.search("\w{3}-\w{3}-\w{4}", phn_no):
     print("it is a phone number")
 
 # Validate fullname
+
 first_name= "Animesh Mukherjee"
 if re.search("\w{2,20}\s\w{2,20}", first_name):
     print("Valid fullname")
