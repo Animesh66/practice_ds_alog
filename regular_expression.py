@@ -55,3 +55,7 @@ food = "hat rat mat pat"
 regex = re.compile("[r]at")
 food = regex.sub("food", food)
 print(food)
+
+
+rand_str= "here is \\drogba"
+print(re.search(r"\\drogba", rand_str))
