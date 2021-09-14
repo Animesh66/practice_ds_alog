@@ -69,7 +69,8 @@ print("Matches: ", re.findall("\d{5,7}", num))
 # Validate phone number
 
 # \w means [A-Za-z0-9_]
-# \W means [A-Za-z0-9_]
+# \W means [^A-Za-z0-9_]
+
 phn_no = "412-555-1212"
 
 if re.search("\w{3}-\w{3}-\w{4}", phn_no):
