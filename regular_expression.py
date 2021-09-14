@@ -48,3 +48,10 @@ for j in all_str:
 range_str = re.findall('[^h-m]at', str_new)  # does not include the range between h-m
 for j in all_str:
     print(j)
+
+# replace character in string
+
+food = "hat rat mat pat"
+regex = re.compile("[r]at")
+food = regex.sub("food", food)
+print(food)
