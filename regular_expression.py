@@ -82,3 +82,7 @@ if re.search("\w{3}-\w{3}-\w{4}", phn_no):
 first_name= "Animesh Mukherjee"
 if re.search("\w{2,20}\s\w{2,20}", first_name):
     print("Valid fullname")
+
+# Validate email id
+
+email = "animesh5678@gmail.com"
