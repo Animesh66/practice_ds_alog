@@ -56,6 +56,12 @@ regex = re.compile("[r]at")
 food = regex.sub("food", food)
 print(food)
 
+# print 2 backslashes
 
-rand_str= "here is \\drogba"
+rand_str = "here is \\drogba"
 print(re.search(r"\\drogba", rand_str))
+
+# find digits using regex
+
+num = "123 1234 12345 123456 1234567"
+print("Matches: ", re.findall("\d{5,7}", num))
