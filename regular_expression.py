@@ -15,4 +15,15 @@ for each_name in names:
     x += 1
 print(age_dict)
 
+# search work through regular expression
+if re.search("inform", "We need to inform him on time"):
+    print("Inform is there in the string")
+
+# find all possible inform ord in a given string
+find_inform = re.findall("inform", "We need to inform him with latest information")
+
+for inform in find_inform:
+    print(inform)
+
+print(len(find_inform))
 
