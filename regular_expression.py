@@ -79,10 +79,12 @@ if re.search("\w{3}-\w{3}-\w{4}", phn_no):
 
 # Validate fullname
 
-first_name= "Animesh Mukherjee"
+first_name = "Animesh Mukherjee"
 if re.search("\w{2,20}\s\w{2,20}", first_name):
     print("Valid fullname")
 
 # Validate email id
 
-email = "animesh5678@gmail.com"
+email = "animesh5678@gmail.com sk@email.com sk.com sk.cm.au sk@dk san@gmail.com slkop@sk.com.au"
+
+print("Email matches: ", len(re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}.[A-Za-z]{2,3}", email)))
