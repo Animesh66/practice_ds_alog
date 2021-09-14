@@ -28,8 +28,23 @@ for inform in find_inform:
 print(len(find_inform))
 
 # print the starting and ending index of the matching string
-str = "We need to inform him with latest information"
-for index in re.finditer("inform", str):
+
+str_regex = "We need to inform him with latest information"
+for index in re.finditer("inform", str_regex):
     location = index.span()  # convert the index into a tuple
     print(location)
 
+# Match word pattern with regexp
+
+str_new = "Sat, hat, mat , pat"
+all_str = re.findall('[Shmp]at', str_new)  # find all the patterns with S,h, m, p with "at"
+for i in all_str:
+    print(i)
+
+range_str = re.findall('[h-m]at', str_new)  # include the range between h-m
+for j in all_str:
+    print(j)
+
+range_str = re.findall('[^h-m]at', str_new)  # does not include the range between h-m
+for j in all_str:
+    print(j)
