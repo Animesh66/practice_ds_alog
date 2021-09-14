@@ -70,6 +70,7 @@ print("Matches: ", re.findall("\d{5,7}", num))
 
 # \w means [A-Za-z0-9_]
 # \W means [^A-Za-z0-9_]
+# \s means whitespace
 
 phn_no = "412-555-1212"
 
