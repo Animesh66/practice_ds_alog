@@ -20,7 +20,7 @@ print(age_dict)
 if re.search("inform", "We need to inform him on time"):
     print("Inform is there in the string")
 
-# find all possible inform ord in a given string
+# find all possible inform word in a given string
 
 find_inform = re.findall("inform", "We need to inform him with latest information")
 for inform in find_inform:
@@ -31,13 +31,13 @@ print(len(find_inform))
 
 str_regex = "We need to inform him with latest information"
 for index in re.finditer("inform", str_regex):
-    location = index.span()  # convert the index into a tuple
+    location = index.span()  # convert the start and finish index of the matched string into a tuple
     print(location)
 
 # Match word pattern with regexp
 
 str_new = "Sat, hat, mat , pat"
-all_str = re.findall('[Shmp]at', str_new)  # find all the patterns with S,h, m, p with "at"
+all_str = re.findall('[Shmp]at', str_new)  # find all the patterns with S,h, m, p with "at" in the end
 for i in all_str:
     print(i)
 
