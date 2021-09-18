@@ -70,7 +70,7 @@ print("Matches: ", re.findall("\d{5,7}", num))
 
 # \w means [A-Za-z0-9_]
 # \W means [^A-Za-z0-9_]
-# \s means whitespace
+# \s means white-space
 
 phn_no = "412-555-1212"
 
@@ -85,6 +85,9 @@ if re.search("\w{2,20}\s\w{2,20}", first_name):
 
 # Validate email id
 
-email = "animesh5678@gmail.com sk@email.com sk.com sk.cm.au sk@dk san@gmail.com slkop@sk.com.au"
+email = "animesh5678@gmail.com, fuckyou@email.com, mylove@.com, supriti.12%@gmail.com.au, makafee@dk, san@gmail.com, slkop@sk.com.au, amit_2013+@email.co.in"
+valid_email = re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}.[A-Za-z]{2,3}", email)
+print("Email matches: ", len(valid_email))
+for ve in valid_email:
+    print(f"{ve} is a valid email")
 
-print("Email matches: ", len(re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}.[A-Za-z]{2,3}", email)))
