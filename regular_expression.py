@@ -90,4 +90,3 @@ valid_email = re.findall("[\w._%+-]{1,20}@[\w.-]{2,20}.[A-Za-z]{2,3}", email)
 print("Email matches: ", len(valid_email))
 for ve in valid_email:
     print(f"{ve} is a valid email")
-
