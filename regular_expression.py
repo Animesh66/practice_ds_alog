@@ -52,7 +52,8 @@ for j in all_str:
 # replace character in string
 
 food = "hat rat mat pat"
-regex = re.compile("[r]at")
+regex = re.compile("[r]at")  # re.compile() can combine a regular expression pattern into pattern objects,
+# which can be used for pattern matching. It also helps to search a pattern again without rewriting it.
 food = regex.sub("food", food)
 print(food)
 
@@ -86,7 +87,7 @@ if re.search("\w{2,20}\s\w{2,20}", first_name):
 # Validate email id
 
 email = "animesh5678@gmail.com, fuck_you@email.com, mylove@.com, supriti_.&&12%@gmail.com.au, makafee@dk@com.au, san@gmail.com, slkop@@sk.com.au, amit_2013+$$@email.co.in"
-valid_email = re.findall("[\w.%+-]{1,20}[@]{1}[\w.-]{2,20}[.]{1}[A-Za-z]{2,3}", email)
+valid_email = re.findall(r"[\w.%+-]{1,20}[@]{1}[\w.-]{2,20}[.]{1}[A-Za-z]{2,3}", email)
 print("Email matches: ", len(valid_email))
 for ve in valid_email:
     print(f"{ve} is a valid email")
