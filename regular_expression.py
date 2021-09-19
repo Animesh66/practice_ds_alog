@@ -52,7 +52,7 @@ for j in all_str:
 # replace character in string
 
 food = "hat rat mat pat"
-regex = re.compile("[r]at")  # re.compile() can combine a regular expression pattern into pattern objects,
+regex = re.compile(r"[r]at")  # re.compile() can combine a regular expression pattern into pattern objects,
 # which can be used for pattern matching. It also helps to search a pattern again without rewriting it.
 food = regex.sub("food", food)
 print(food)
@@ -65,7 +65,7 @@ print(re.search(r"\\drogba", rand_str))
 # find digits using regex
 
 num = "123 1234 12345 123456 1234567"
-print("Matches: ", re.findall("\d{5,7}", num))
+print("Matches: ", re.findall(r"\d{5,7}", num))
 
 # Validate phone number
 
@@ -75,13 +75,13 @@ print("Matches: ", re.findall("\d{5,7}", num))
 
 phn_no = "412-555-1212"
 
-if re.search("\w{3}-\w{3}-\w{4}", phn_no):
+if re.search(r"\w{3}-\w{3}-\w{4}", phn_no):
     print("it is a phone number")
 
 # Validate fullname
 
 first_name = "Animesh Mukherjee"
-if re.search("\w{2,20}\s\w{2,20}", first_name):
+if re.search(r"\w{2,20}\s\w{2,20}", first_name):
     print("Valid fullname")
 
 # Validate email id
