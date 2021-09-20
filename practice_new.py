@@ -1,4 +1,4 @@
-def return_frequency():
+def return_string_frequency():
     try:
         word = input("Enter a string: ")
         new_string = word.lower()
@@ -16,5 +16,5 @@ def return_frequency():
 
 
 if __name__ == "__main__":
-    maximum_freq = return_frequency()
+    maximum_freq = return_string_frequency()
     print(maximum_freq)
