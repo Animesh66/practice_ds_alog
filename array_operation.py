@@ -9,3 +9,11 @@ tuple_new = (12, 34, 9)
 
 for index, value in enumerate(tuple_new):
     print(index, value)
+
+print(max(1,2))
+print(min(3,4))
+str = "I am a very bad boy"
+str = str.split()
+print(str)
+str = str.reverse()
+print(str)
