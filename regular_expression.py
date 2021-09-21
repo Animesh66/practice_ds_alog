@@ -37,8 +37,8 @@ for index in re.finditer("inform", str_regex):
 
 # Match word pattern with regexp
 
-str_new = "Sat, hat, mat , pat"
-all_str = re.findall('[Shmp]at', str_new)  # find all the patterns with S,h, m, p with "at" in the end
+str_new = "sat, hat, mat , pat"
+all_str = re.findall('[shmp]at', str_new)  # find all the patterns with S,h, m, p with "at" in the end
 for i in all_str:
     print(i)
 
