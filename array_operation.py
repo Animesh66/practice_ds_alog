@@ -13,7 +13,6 @@ for index, value in enumerate(tuple_new):
 print(max(1,2))
 print(min(3,4))
 str = "I am a very bad boy"
-str = str.split()
+str = str.split()[::-1]
 print(str)
-str = str.reverse()
-print(str)
+print(" ".join(reversed(str.split())))
