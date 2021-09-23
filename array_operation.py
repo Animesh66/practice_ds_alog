@@ -16,3 +16,6 @@ str = "I am a very bad boy"
 str = str.split()[::-1]
 print(str)
 print(" ".join(reversed(str.split())))
+# str1 = "Tweety is a good girl"
+# str1.reverse()
+# print(str1)
